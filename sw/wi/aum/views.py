@@ -8,7 +8,7 @@ from django.urls import reverse
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {'latest_question_list': latest_question_list}
-    return render(request, 'polls/index.html', context)
+    return render(request, 'aum/index.html', context)
 def detail(request, question_id):
     return HttpResponse("You're looking at question %s." % question_id)
 
@@ -32,7 +32,7 @@ def login(request):   #removed  , u ,p
    try:
         U2=User.objects.get(username=u)
    except (KeyError, User.DoesNotExist):
-       return HttpResponseRedirect(reverse( 'polls:index'))
+       return HttpResponseRedirect(reverse( 'aum:index'))
        #return HttpResponse("That User Doesn't Exist")     HttpResponseRedirect
    else:
         P2 = U2.password
@@ -45,7 +45,7 @@ def login(request):   #removed  , u ,p
 #        selected_choice = question.choice_set.get(pk=request.POST['choice'])
 #    except (KeyError, Choice.DoesNotExist):
 #        # Redisplay the question voting form.
-#        return render(request, 'polls/details.html', {
+#        return render(request, 'aum/details.html', {
 #            'question': question,
 #            'error_message': "You didn't select a choice.",
 #        })
@@ -55,4 +55,4 @@ def login(request):   #removed  , u ,p
 #        # Always return an HttpResponseRedirect after successfully dealing
 #        # with POST data. This prevents data from being posted twice if a
 #        # user hits the Back button.
-#        return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+#        return HttpResponseRedirect(reverse('aum:results', args=(question.id,)))
