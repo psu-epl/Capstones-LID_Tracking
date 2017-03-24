@@ -1,9 +1,19 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+<head>
+<title>Login Form</title>
+</head>
+
+<body>
+<div class ="login">
+    <hi>Login</h1>
+    <form action ="login/" method="post">
+    {% csrf_token %}
+        <input type="text" name="u" placeholder="Username" required="required" user_id="user" />
+        <input type="password" name="p" placeholder="Password" required="required" pword_id="pWord"/>    
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in bitches!!</button>
+        
+    
+    </form>
+</div>
+
+</body>
+

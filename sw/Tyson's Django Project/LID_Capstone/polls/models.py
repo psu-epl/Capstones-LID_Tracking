@@ -38,6 +38,11 @@ class User(models.Model):
     ec_first_name = models.CharField(max_length=100)
     ec_last_name  = models.CharField(max_length=100)
     ec_phone_number = models.BigIntegerField()
+    username        = models.CharField(max_length=100, unique=True, default='abcd')
+    password        = models.CharField(max_length=100, default = '222')
+    MALE='Male' ; FEMALE='Female'; NOTIDENTIFY='Not Identified'
+    gender_choices= ((MALE,'Male'),(FEMALE,'Female'),(NOTIDENTIFY,'NotIdentify'))
+    gender = models.CharField(max_length = 100, choices =gender_choices, default = NOTIDENTIFY)
     def __str__(self):
         return self.first_name
 
@@ -59,3 +64,41 @@ class Tool_User(models.Model):
     def __str__(self):
         c = User.objects.get(id=self.user_id)
         return c.first_name
+
+#Create a table of people considered managers.
+#This should just contain a list of RFIDs
+class Manager(models.Model):
+    rfid = models.BigIntegerField()
+    
+    def __str__(self):
+        return self.rfid
+        
+
+
+
+#create a table of people considered admin
+#This should just contain a list of RFIDs
+
+class Admin(models.Model):
+    rfid = models.BigIntegerField()
+    
+    def __str__(self):
+        return self.rfid
+        
+#create a table of punch ins 
+#this contains a user, a station module id, and a timestamp
+class PunchIn(models.Model):
+    rfid = models.BigIntegerField()
+    smid = models.BigIntegerField()
+    time = models.DateTimeField('punch in time')
+
+    def __str__(self):
+        return self.time  #THIS NEEDS TO BE CHANGED LATER!!!!!!!!!!!!
+#create a table of punch outs
+#this contains just tool and punch outs.
+class PunchOut(models.Model):
+    smid = models.BigIntegerField()
+    time = models.DateTimeField('punch out time')
+
+    def __str__(self):
+        return self.time   #THIS NEEDS TO BE CHANGED LATER!!!!!!!!!!!!
