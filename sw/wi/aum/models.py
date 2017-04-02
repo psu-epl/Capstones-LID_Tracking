@@ -2,26 +2,26 @@ import datetime
 
 from django.db import models
 from django.utils import timezone
-
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
-    def __str__(self):
-        return self.question_text
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
-        
-        
-        
-        
-
-class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
-    def __str__(self):
-        return self.choice_text
-        
+#Commenting this section out for now, but am leaving it here just in case things go sideways
+#class Question(models.Model):
+#    question_text = models.CharField(max_length=200)
+#    pub_date = models.DateTimeField('date published')
+#    def __str__(self):
+#        return self.question_text
+#    def was_published_recently(self):
+#        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+#        
+#        
+#        
+#        
+#
+#class Choice(models.Model):
+#    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+#    choice_text = models.CharField(max_length=200)
+#    votes = models.IntegerField(default=0)
+#    def __str__(self):
+#        return self.choice_text
+#        
         
 
 # This is a class of users to store their personal info
@@ -84,21 +84,29 @@ class Admin(models.Model):
     
     def __str__(self):
         return self.rfid
-        
+
+#COMMENTED THIS OUT FOR CHANGES. LEAVING IN FOR NOW IN CASE THINGS GO SIDEWAYS.
+
 #create a table of punch ins 
 #this contains a user, a station module id, and a timestamp
-class PunchIn(models.Model):
-    rfid = models.BigIntegerField()
-    smid = models.BigIntegerField()
-    time = models.DateTimeField('punch in time')
-
-    def __str__(self):
-        return self.time  #THIS NEEDS TO BE CHANGED LATER!!!!!!!!!!!!
-#create a table of punch outs
-#this contains just tool and punch outs.
-class PunchOut(models.Model):
-    smid = models.BigIntegerField()
-    time = models.DateTimeField('punch out time')
-
-    def __str__(self):
-        return self.time   #THIS NEEDS TO BE CHANGED LATER!!!!!!!!!!!!
+#class PunchIn(models.Model):
+#    rfid = models.BigIntegerField()
+#    smid = models.BigIntegerField()
+#    time = models.DateTimeField('punch in time')
+#
+#    def __str__(self):
+#        return self.time  #THIS NEEDS TO BE CHANGED LATER!!!!!!!!!!!!
+##create a table of punch outs
+##this contains just tool and punch outs.
+#class PunchOut(models.Model):
+#    smid = models.BigIntegerField()
+#    time = models.DateTimeField('punch out time')
+#
+#    def __str__(self):
+#        return self.time   #THIS NEEDS TO BE CHANGED LATER!!!!!!!!!!!!
+        
+class Punches(models.Model):
+    tool = models.ForeignKey(Tool , null = True)
+    time_in = models.DateTimeField('punch in time')
+    time_out = models.DateTimeField('punch out time', blank=True)
+    rfid = rfid = models.BigIntegerField()
