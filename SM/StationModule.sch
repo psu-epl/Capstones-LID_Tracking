@@ -7672,32 +7672,76 @@ high speed</description>
 <sheet>
 <plain>
 <text x="48.26" y="-30.48" size="1.778" layer="97">bypass cap</text>
-<text x="-127" y="121.92" size="2.54" layer="97">Device power and USB HID</text>
-<text x="-111.76" y="134.62" size="5.08" layer="97">I/O</text>
-<text x="-137.16" y="83.82" size="2.54" layer="97"> ESP8266 Serial &amp; Programming Header</text>
-<text x="-124.46" y="50.8" size="2.54" layer="97">RFID Reader Interface</text>
+<text x="-127" y="139.7" size="2.54" layer="97">Device power and USB HID</text>
+<text x="-111.76" y="149.86" size="5.08" layer="97">I/O</text>
+<text x="-137.16" y="109.22" size="2.54" layer="97"> ESP8266 Serial &amp; Programming Header</text>
+<text x="-127" y="76.2" size="2.54" layer="97">RFID Reader Interface</text>
 <text x="-127" y="-63.5" size="2.54" layer="97">3.3V Power supply for ESP</text>
-<wire x1="-137.16" y1="132.08" x2="-73.66" y2="132.08" width="0.1524" layer="97"/>
-<wire x1="-73.66" y1="132.08" x2="-73.66" y2="-45.72" width="0.1524" layer="97"/>
-<wire x1="-73.66" y1="-45.72" x2="-137.16" y2="-45.72" width="0.1524" layer="97"/>
-<wire x1="-137.16" y1="-45.72" x2="-137.16" y2="132.08" width="0.1524" layer="97"/>
-<text x="-132.08" y="48.26" size="1.778" layer="97">5-16V</text>
+<wire x1="-137.16" y1="147.32" x2="-76.2" y2="147.32" width="0.1524" layer="97"/>
+<wire x1="-76.2" y1="147.32" x2="-76.2" y2="-45.72" width="0.1524" layer="97"/>
+<wire x1="-76.2" y1="-45.72" x2="-137.16" y2="-45.72" width="0.1524" layer="97"/>
+<wire x1="-137.16" y1="-45.72" x2="-137.16" y2="147.32" width="0.1524" layer="97"/>
+<text x="-127" y="68.58" size="1.778" layer="97">5-16V</text>
 <text x="45.72" y="58.42" size="3.81" layer="97">ESP-12E</text>
-<text x="-124.46" y="10.16" size="2.54" layer="97">APD Interface</text>
+<text x="-127" y="40.64" size="2.54" layer="97">APD Interface</text>
 <text x="-60.96" y="111.76" size="1.778" layer="97">Unused inputs must be pulled HIGH or LOW</text>
 <text x="-44.704" y="130.302" size="1.778" layer="97">5V to 3.3V level shifter</text>
-<text x="109.22" y="129.54" size="1.778" layer="97">USB data lines
-for future peripherals</text>
 <text x="33.02" y="22.86" size="1.778" layer="97">NC</text>
 <text x="31.496" y="127.762" size="1.778" layer="97">3.3V to 5V level shifter</text>
 <text x="17.78" y="106.68" size="1.778" layer="97">Unused inputs must be pulled HIGH or LOW</text>
-<text x="-121.92" y="-20.32" size="2.54" layer="97">SPI HEADER</text>
-<text x="-88.9" y="-35.56" size="1.778" layer="97">SS1</text>
-<text x="-88.9" y="-38.1" size="1.778" layer="97">SS2</text>
-<text x="-88.9" y="-27.94" size="1.778" layer="97">SCK</text>
-<text x="-88.9" y="-30.48" size="1.778" layer="97">MOSI</text>
-<text x="-88.9" y="-33.02" size="1.778" layer="97">MISO</text>
+<text x="-124.46" y="-20.32" size="2.54" layer="97">SPI HEADER</text>
+<text x="-91.44" y="-35.56" size="1.778" layer="97">SS1</text>
+<text x="-91.44" y="-38.1" size="1.778" layer="97">SS2</text>
+<text x="-91.44" y="-27.94" size="1.778" layer="97">SCK</text>
+<text x="-91.44" y="-30.48" size="1.778" layer="97">MOSI</text>
+<text x="-91.44" y="-33.02" size="1.778" layer="97">MISO</text>
 <text x="44.45" y="-4.064" size="1.778" layer="97">NO CONNECT</text>
+<text x="-121.92" y="12.7" size="2.54" layer="97">Stop / Logout Button</text>
+<text x="167.64" y="-25.4" size="3.048" layer="97">BOOTLOADER MODES</text>
+<text x="187.96" y="-55.88" size="2.54" layer="97">GPIO 0     GPIO 2     GPIO 15
+
+    0               1                0
+
+    1               1                0
+
+    0               0                1</text>
+<text x="134.62" y="-55.88" size="2.54" layer="97">UART DOWNLOAD (Program)
+
+      FLASH STARTUP (default)
+
+                           SD-Card Boot</text>
+<wire x1="185.42" y1="-35.56" x2="200.66" y2="-35.56" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-35.56" x2="218.44" y2="-35.56" width="0.1524" layer="97"/>
+<wire x1="218.44" y1="-35.56" x2="236.22" y2="-35.56" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="-35.56" x2="236.22" y2="-43.18" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="-43.18" x2="236.22" y2="-50.8" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="-50.8" x2="236.22" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="-58.42" x2="218.44" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-58.42" x2="185.42" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-58.42" x2="185.42" y2="-50.8" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-50.8" x2="185.42" y2="-43.18" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-43.18" x2="185.42" y2="-35.56" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-35.56" x2="200.66" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="200.66" y1="-58.42" x2="218.44" y2="-58.42" width="0.1524" layer="97"/>
+<wire x1="218.44" y1="-58.42" x2="218.44" y2="-35.56" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-43.18" x2="236.22" y2="-43.18" width="0.1524" layer="97"/>
+<wire x1="236.22" y1="-50.8" x2="185.42" y2="-50.8" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-50.8" x2="142.24" y2="-50.8" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-43.18" x2="137.16" y2="-43.18" width="0.1524" layer="97"/>
+<wire x1="185.42" y1="-58.42" x2="162.56" y2="-58.42" width="0.1524" layer="97"/>
+<text x="170.18" y="30.48" size="2.54" layer="97">  GPIO0  -  Green LED status indicator
+  GPIO1  -  SPI Slave Select 1
+  GPIO2  -  Audible alarm control
+  GPIO3  -  SPI Slave Select 2
+  GPIO4  -  RFID-DATA1 (data in)
+  GPIO5  -  RFID-DATA0 (data in)
+GPIO12  -  SPI MOSI
+GPIO13  -  SPI MISO
+GPIO14  -  SPI CLK
+GPIO15  -  APD Enable
+      ADC  -  Stop / Logout</text>
+<text x="180.34" y="76.2" size="3.048" layer="97">PIN ASSIGNMENTS</text>
+<wire x1="167.64" y1="73.66" x2="231.14" y2="73.66" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="53.34" y="22.86"/>
@@ -7715,23 +7759,23 @@ for future peripherals</text>
 <instance part="FRAME1" gate="G$1" x="-157.48" y="-121.92"/>
 <instance part="FRAME2" gate="G$1" x="149.86" y="-106.68"/>
 <instance part="C1" gate="G$1" x="50.8" y="-25.4" rot="R90"/>
-<instance part="P+3" gate="1" x="-116.84" y="119.38"/>
+<instance part="P+3" gate="1" x="-116.84" y="137.16"/>
 <instance part="+3V1" gate="G$1" x="-83.82" y="-68.58"/>
 <instance part="+3V2" gate="G$1" x="33.02" y="55.88"/>
 <instance part="+3V3" gate="G$1" x="86.36" y="38.1"/>
 <instance part="+3V4" gate="G$1" x="121.92" y="35.56"/>
 <instance part="+3V5" gate="G$1" x="20.32" y="35.56"/>
 <instance part="+3V6" gate="G$1" x="22.86" y="12.7" rot="R90"/>
-<instance part="SUPPLY4" gate="GND" x="-116.84" y="99.06"/>
+<instance part="SUPPLY4" gate="GND" x="-116.84" y="116.84"/>
 <instance part="C2" gate="G$1" x="-88.9" y="-83.82" rot="R180"/>
 <instance part="P+1" gate="1" x="-127" y="-66.04"/>
 <instance part="C3" gate="G$1" x="-124.46" y="-83.82" rot="R180"/>
 <instance part="SUPPLY6" gate="GND" x="-124.46" y="-93.98"/>
 <instance part="SUPPLY8" gate="GND" x="-88.9" y="-93.98"/>
 <instance part="SUPPLY9" gate="GND" x="-106.68" y="-93.98"/>
-<instance part="SUPPLY10" gate="GND" x="-116.84" y="25.4"/>
-<instance part="JP3" gate="A" x="-91.44" y="2.54"/>
-<instance part="SUPPLY13" gate="GND" x="-109.22" y="-5.08"/>
+<instance part="SUPPLY10" gate="GND" x="-119.38" y="50.8"/>
+<instance part="JP3" gate="A" x="-96.52" y="30.48"/>
+<instance part="SUPPLY13" gate="GND" x="-114.3" y="22.86"/>
 <instance part="U$1" gate="G$1" x="-33.02" y="124.46"/>
 <instance part="U$1" gate="G$7" x="-2.54" y="106.68"/>
 <instance part="U$1" gate="G$2" x="-33.02" y="119.38"/>
@@ -7752,27 +7796,27 @@ for future peripherals</text>
 <instance part="P+5" gate="1" x="73.66" y="119.38"/>
 <instance part="SUPPLY14" gate="GND" x="-38.1" y="86.36"/>
 <instance part="SUPPLY15" gate="GND" x="35.56" y="83.82"/>
-<instance part="SPI_HEADER" gate="A" x="-111.76" y="-33.02"/>
-<instance part="SPI-HEADER" gate="A" x="-91.44" y="-33.02"/>
-<instance part="P+2" gate="1" x="-121.92" y="43.18"/>
-<instance part="RFID-HEADER" gate="A" x="-101.6" y="33.02"/>
-<instance part="PROG-HEADER" gate="A" x="-96.52" y="68.58"/>
-<instance part="SUPPLY17" gate="GND" x="-121.92" y="60.96"/>
-<instance part="+3V8" gate="G$1" x="-121.92" y="78.74"/>
+<instance part="SPI_HEADER" gate="A" x="-114.3" y="-33.02"/>
+<instance part="SPI-HEADER" gate="A" x="-93.98" y="-33.02"/>
+<instance part="P+2" gate="1" x="-124.46" y="68.58"/>
+<instance part="RFID-HEADER" gate="A" x="-104.14" y="58.42"/>
+<instance part="PROG-HEADER" gate="A" x="-99.06" y="93.98"/>
+<instance part="SUPPLY17" gate="GND" x="-124.46" y="86.36"/>
+<instance part="+3V8" gate="G$1" x="-124.46" y="104.14"/>
 <instance part="C4" gate="G$1" x="2.54" y="106.68"/>
 <instance part="C5" gate="G$1" x="81.28" y="106.68"/>
 <instance part="H1" gate="G$1" x="109.22" y="-86.36"/>
 <instance part="H2" gate="G$1" x="119.38" y="-86.36"/>
 <instance part="H3" gate="G$1" x="109.22" y="-93.98"/>
 <instance part="H4" gate="G$1" x="119.38" y="-93.98"/>
-<instance part="USB" gate="A" x="-106.68" y="106.68"/>
-<instance part="STOP" gate="G$1" x="-50.8" y="27.94"/>
+<instance part="USB" gate="A" x="-106.68" y="124.46"/>
+<instance part="STOP" gate="G$1" x="-114.3" y="-2.54"/>
 <instance part="R5" gate="G$1" x="5.08" y="22.86" rot="R90"/>
 <instance part="R6" gate="G$1" x="-15.24" y="27.94" rot="R180"/>
-<instance part="SUPPLY16" gate="GND" x="-7.62" y="15.24"/>
+<instance part="SUPPLY16" gate="GND" x="-22.86" y="15.24"/>
 <instance part="SUPPLY18" gate="GND" x="5.08" y="15.24"/>
-<instance part="+3V9" gate="G$1" x="-40.64" y="38.1"/>
-<instance part="D2" gate="G$1" x="-7.62" y="22.86" rot="R270"/>
+<instance part="+3V9" gate="G$1" x="-104.14" y="7.62"/>
+<instance part="D2" gate="G$1" x="-22.86" y="22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7806,8 +7850,8 @@ for future peripherals</text>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="-109.22" y1="104.14" x2="-116.84" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="104.14" x2="-116.84" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="121.92" x2="-116.84" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="121.92" x2="-116.84" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="USB" gate="A" pin="4"/>
 </segment>
 <segment>
@@ -7826,14 +7870,14 @@ for future peripherals</text>
 <wire x1="-106.68" y1="-88.9" x2="-106.68" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="27.94" x2="-116.84" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="53.34" x2="-119.38" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <pinref part="RFID-HEADER" gate="A" pin="6"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
-<wire x1="-93.98" y1="0" x2="-109.22" y2="0" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="0" x2="-109.22" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="27.94" x2="-114.3" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="27.94" x2="-114.3" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -7891,7 +7935,7 @@ for future peripherals</text>
 <segment>
 <pinref part="PROG-HEADER" gate="A" pin="6"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="-99.06" y1="63.5" x2="-121.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="88.9" x2="-124.46" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -7899,8 +7943,8 @@ for future peripherals</text>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="-7.62" y1="20.32" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="-22.86" y1="17.78" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -7912,14 +7956,14 @@ for future peripherals</text>
 <segment>
 <pinref part="SPI-HEADER" gate="A" pin="4"/>
 <pinref part="SPI_HEADER" gate="A" pin="4"/>
-<wire x1="-93.98" y1="-35.56" x2="-114.3" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-35.56" x2="-121.92" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-35.56"/>
-<label x="-121.92" y="-35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-96.52" y1="-35.56" x2="-116.84" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-35.56" x2="-124.46" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-116.84" y="-35.56"/>
+<label x="-124.46" y="-35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="-111.76" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="-99.06" y1="71.12" x2="-111.76" y2="71.12" width="0.1524" layer="91"/>
+<label x="-114.3" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="96.52" x2="-114.3" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="PROG-HEADER" gate="A" pin="3"/>
 </segment>
 </net>
@@ -7956,8 +8000,8 @@ for future peripherals</text>
 <label x="0" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-99.06" y1="68.58" x2="-106.68" y2="68.58" width="0.1524" layer="91"/>
-<label x="-106.68" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="93.98" x2="-109.22" y2="93.98" width="0.1524" layer="91"/>
+<label x="-109.22" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="PROG-HEADER" gate="A" pin="4"/>
 </segment>
 </net>
@@ -7998,8 +8042,8 @@ for future peripherals</text>
 <label x="30.48" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="-109.22" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="-99.06" y1="76.2" x2="-109.22" y2="76.2" width="0.1524" layer="91"/>
+<label x="-111.76" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="101.6" x2="-111.76" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="PROG-HEADER" gate="A" pin="1"/>
 </segment>
 </net>
@@ -8012,10 +8056,10 @@ for future peripherals</text>
 <segment>
 <pinref part="SPI-HEADER" gate="A" pin="3"/>
 <pinref part="SPI_HEADER" gate="A" pin="3"/>
-<wire x1="-93.98" y1="-33.02" x2="-114.3" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-33.02" x2="-121.92" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-33.02"/>
-<label x="-121.92" y="-33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-96.52" y1="-33.02" x2="-116.84" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-33.02" x2="-124.46" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-116.84" y="-33.02"/>
+<label x="-124.46" y="-33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO12" class="0">
@@ -8027,10 +8071,10 @@ for future peripherals</text>
 <segment>
 <pinref part="SPI-HEADER" gate="A" pin="2"/>
 <pinref part="SPI_HEADER" gate="A" pin="2"/>
-<wire x1="-93.98" y1="-30.48" x2="-114.3" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-30.48" x2="-121.92" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-30.48"/>
-<label x="-121.92" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-96.52" y1="-30.48" x2="-116.84" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-30.48" x2="-124.46" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-116.84" y="-30.48"/>
+<label x="-124.46" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
@@ -8110,23 +8154,23 @@ for future peripherals</text>
 <junction x="-2.54" y="116.84"/>
 </segment>
 <segment>
-<wire x1="-121.92" y1="73.66" x2="-121.92" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="99.06" x2="-124.46" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <pinref part="PROG-HEADER" gate="A" pin="2"/>
-<wire x1="-99.06" y1="73.66" x2="-121.92" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="99.06" x2="-124.46" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="STOP" gate="G$1" pin="1"/>
-<wire x1="-53.34" y1="30.48" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="0" x2="-104.14" y2="0" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="-40.64" y1="35.56" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="5.08" x2="-104.14" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="-109.22" y1="111.76" x2="-116.84" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="111.76" x2="-116.84" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="129.54" x2="-116.84" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="129.54" x2="-116.84" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="USB" gate="A" pin="1"/>
 </segment>
 <segment>
@@ -8150,31 +8194,23 @@ for future peripherals</text>
 <junction x="73.66" y="115.824"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="40.64" x2="-121.92" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="66.04" x2="-124.46" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <pinref part="RFID-HEADER" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
-<wire x1="-109.22" y1="109.22" x2="-124.46" y2="109.22" width="0.1524" layer="91"/>
-<label x="-124.46" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-109.22" y1="127" x2="-124.46" y2="127" width="0.1524" layer="91"/>
+<label x="-124.46" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="USB" gate="A" pin="2"/>
-</segment>
-<segment>
-<wire x1="127" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<label x="116.84" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
-<wire x1="-109.22" y1="106.68" x2="-124.46" y2="106.68" width="0.1524" layer="91"/>
-<label x="-124.46" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-109.22" y1="124.46" x2="-124.46" y2="124.46" width="0.1524" layer="91"/>
+<label x="-124.46" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="USB" gate="A" pin="3"/>
-</segment>
-<segment>
-<wire x1="127" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
-<label x="116.84" y="121.92" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="RFID-DATA1" class="0">
@@ -8184,8 +8220,8 @@ for future peripherals</text>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="35.56" x2="-111.76" y2="35.56" width="0.1524" layer="91"/>
-<label x="-111.76" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-106.68" y1="60.96" x2="-114.3" y2="60.96" width="0.1524" layer="91"/>
+<label x="-114.3" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="RFID-HEADER" gate="A" pin="3"/>
 </segment>
 </net>
@@ -8196,8 +8232,8 @@ for future peripherals</text>
 <pinref part="U$1" gate="G$2" pin="P$1"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="38.1" x2="-111.76" y2="38.1" width="0.1524" layer="91"/>
-<label x="-111.76" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-106.68" y1="63.5" x2="-114.3" y2="63.5" width="0.1524" layer="91"/>
+<label x="-114.3" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="RFID-HEADER" gate="A" pin="2"/>
 </segment>
 </net>
@@ -8210,10 +8246,10 @@ for future peripherals</text>
 <segment>
 <pinref part="SPI-HEADER" gate="A" pin="1"/>
 <pinref part="SPI_HEADER" gate="A" pin="1"/>
-<wire x1="-93.98" y1="-27.94" x2="-114.3" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-27.94" x2="-121.92" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-27.94"/>
-<label x="-121.92" y="-27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-96.52" y1="-27.94" x2="-116.84" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-27.94" x2="-124.46" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="-116.84" y="-27.94"/>
+<label x="-124.46" y="-27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="APD_EN" class="0">
@@ -8223,8 +8259,8 @@ for future peripherals</text>
 <label x="53.34" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-109.22" y1="5.08" x2="-93.98" y2="5.08" width="0.1524" layer="91"/>
-<label x="-109.22" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-114.3" y1="33.02" x2="-99.06" y2="33.02" width="0.1524" layer="91"/>
+<label x="-114.3" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP3" gate="A" pin="1"/>
 </segment>
 </net>
@@ -8237,14 +8273,14 @@ for future peripherals</text>
 <segment>
 <pinref part="SPI-HEADER" gate="A" pin="5"/>
 <pinref part="SPI_HEADER" gate="A" pin="5"/>
-<wire x1="-93.98" y1="-38.1" x2="-114.3" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-38.1" x2="-121.92" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-38.1"/>
-<label x="-121.92" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-96.52" y1="-38.1" x2="-116.84" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-38.1" x2="-124.46" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-116.84" y="-38.1"/>
+<label x="-124.46" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-99.06" y1="66.04" x2="-106.68" y2="66.04" width="0.1524" layer="91"/>
-<label x="-106.68" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="91.44" x2="-109.22" y2="91.44" width="0.1524" layer="91"/>
+<label x="-109.22" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="PROG-HEADER" gate="A" pin="5"/>
 </segment>
 </net>
@@ -8255,8 +8291,8 @@ for future peripherals</text>
 <label x="50.8" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="33.02" x2="-111.76" y2="33.02" width="0.1524" layer="91"/>
-<label x="-111.76" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-106.68" y1="58.42" x2="-114.3" y2="58.42" width="0.1524" layer="91"/>
+<label x="-114.3" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="RFID-HEADER" gate="A" pin="4"/>
 </segment>
 </net>
@@ -8267,21 +8303,25 @@ for future peripherals</text>
 <label x="50.8" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="30.48" x2="-111.76" y2="30.48" width="0.1524" layer="91"/>
-<label x="-111.76" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-106.68" y1="55.88" x2="-114.3" y2="55.88" width="0.1524" layer="91"/>
+<label x="-114.3" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="RFID-HEADER" gate="A" pin="5"/>
 </segment>
 </net>
 <net name="STOP" class="0">
 <segment>
 <pinref part="STOP" gate="G$1" pin="2"/>
-<wire x1="-53.34" y1="27.94" x2="-38.1" y2="27.94" width="0.1524" layer="91"/>
-<label x="-38.1" y="27.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="-116.84" y1="-2.54" x2="-101.6" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-101.6" y="-2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="27.94" x2="-22.86" y2="27.94" width="0.1524" layer="91"/>
-<label x="-22.86" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="-25.4" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="-22.86" y1="27.94" x2="-25.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="27.94" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-22.86" y="27.94"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -8289,13 +8329,9 @@ for future peripherals</text>
 <pinref part="U1" gate="G$1" pin="ADC"/>
 <wire x1="35.56" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="27.94" x2="-7.62" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="27.94" x2="-10.16" y2="27.94" width="0.1524" layer="91"/>
 <junction x="5.08" y="27.94"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="27.94" x2="-10.16" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="25.4" x2="-7.62" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-7.62" y="27.94"/>
-<pinref part="D2" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
@@ -8314,17 +8350,19 @@ for future peripherals</text>
 <approved hash="208,1,33.02,53.34,+3V3,sup,,,,"/>
 <approved hash="208,1,86.36,35.56,+3V3,sup,,,,"/>
 <approved hash="208,1,121.92,33.02,+3V3,sup,,,,"/>
-<approved hash="208,1,20.32,27.94,+3V3,sup,,,,"/>
+<approved hash="208,1,20.32,33.02,+3V3,sup,,,,"/>
 <approved hash="208,1,25.4,12.7,+3V3,sup,,,,"/>
 <approved hash="208,1,-93.98,-76.2,+3V3,out,,,,"/>
 <approved hash="208,1,-83.82,-71.12,+3V3,sup,,,,"/>
 <approved hash="208,1,-2.54,119.38,+3V3,sup,,,,"/>
 <approved hash="208,1,-121.92,76.2,+3V3,sup,,,,"/>
+<approved hash="208,1,-40.64,35.56,+3V3,sup,,,,"/>
 <approved hash="106,1,-109.22,109.22,D+,,,,,"/>
 <approved hash="106,1,-109.22,106.68,D-,,,,,"/>
 <approved hash="113,1,63.3795,12.9963,U1,,,,,"/>
 <approved hash="113,1,51.816,26.416,FRAME1,,,,,"/>
 <approved hash="113,1,200.431,-92.9386,FRAME2,,,,,"/>
+<approved hash="113,1,-53.1029,30.6112,STOP,,,,,"/>
 </errors>
 </schematic>
 </drawing>
