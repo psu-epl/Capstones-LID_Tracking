@@ -4,8 +4,6 @@
 #### ESP8266 - 12E 
 <a href="https://espressif.com/en/products/hardware/esp8266ex/overview">EXPRESSIF</a>
 
-
-
 This module was chosen for it's cost/size/power consumption, and prior experience the team had using them.<br>
 Also the following:
 - Features:
@@ -16,8 +14,31 @@ Also the following:
   - Integrated 10-bit ADC
   - SDIO 2.0, (H) SPI, UART, I2C, I2S, IRDA, PWM, GPIO
 
-### RFID things
-The PSUID card functions at 125kHz.
+
+
+
+
+#### ESP Pin Functions:
+| Pin     | Function                   |
+|---------|----------------------------|
+| GPIO 0  | Green LED status indicator |
+| GPIO 1  | SPI Slave Select 1         |
+| GPIO2   | Audible alarm control      |
+| GPIO 3  | SPI Slave Select 2         |
+| GPIO 4  | RFID-DATA1                 |
+|  GPIO 5 | RFID-DATA0                 |
+| GPIO 12 | SPI MOSI                   |
+| GPIO 13 | SPI MISO                   |
+| GPIO 14 | SPI Clock                  |
+| GPIO 15 | APD Enable                 |
+| ADC     | Stop / Logout              |
+
+
+
+
+
+
+
 
 #### Decoding the signal
 
@@ -33,9 +54,5 @@ From: <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/51115F.pdf">Micro
 </p>
 
 ### USB Bridge (HID)
-May be able to populate (or not) this part of the SM.
-
-Software: Use an ATTiny and some HID library.
-
-Or hardware: Would be nice to use a bridge that supports I2C or SPI like: 
-<a href="http://ww1.microchip.com/downloads/en/DeviceDoc/22288A.pdf">MCP2210</a>
+The Station module may be configured to act as a human interface device (HID) such as a keyboard for entering credentials into a computer.
+The ESP-12E does not support USB natively, but a USB-to-SPI Protocol Converter may be used such as the MCP2210, and plugged into the SPI breakout.
