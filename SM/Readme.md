@@ -60,7 +60,9 @@ The ESP-12E does not support USB natively, but a USB-to-SPI Protocol Converter m
 
 
 
-#### BOM:
+
+
+### BOM:
 | Qty | Value | Device     | Package                         | Parts              | Description                                        | Digikey                 | Mouser               |
 |-----|-------|------------|---------------------------------|--------------------|----------------------------------------------------|-------------------------|----------------------|
 | 1   |       | ESP12ESMD  | ESP12E-SMD                      | U1                 | ESP12E Module                                      | 1528-1438-ND            | 485-2491             |
