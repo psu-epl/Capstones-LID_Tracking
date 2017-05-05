@@ -7357,8 +7357,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="-2.54" y="0" visible="pad" length="point" rot="R180"/>
-<pin name="P$2" x="5.08" y="0" visible="pad" length="point"/>
+<pin name="P$1" x="-2.54" y="0" visible="pad" length="point" direction="in" rot="R180"/>
+<pin name="P$2" x="5.08" y="0" visible="pad" length="point" direction="out"/>
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -7376,7 +7376,7 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="4050B">
+<deviceset name="4050B" prefix="U">
 <gates>
 <gate name="G$1" symbol="4050B" x="5.08" y="12.7" swaplevel="1"/>
 <gate name="G$2" symbol="4050B" x="5.08" y="5.08" swaplevel="1"/>
