@@ -66,7 +66,7 @@ The ESP-12E does not support USB natively, but a USB-to-SPI Protocol Converter m
 | Qty | Value | Device     | Package                         | Parts              | Description                                        | Digikey                 | Mouser               |
 |-----|-------|------------|---------------------------------|--------------------|----------------------------------------------------|-------------------------|----------------------|
 | 1   |       | ESP12ESMD  | ESP12E-SMD                      | U1                 | ESP12E Module                                      | 1528-1438-ND            | 485-2491             |
-| 1   | 3.3V  | Diode      | SOD123                          | D1                 | Stop button protection diode (optional)            | MMSZ5226B-FDICT-ND      | 621-MMSZ5226B-F      |
+| 1   | 3.3V  | D1      | SOT23                          | D1                 | TVS Diode            | MMBZ5V6ALT1GOSCT-ND      | 863-MMBZ5V6ALT1G      |
 | 2   |       | DTSM-3     | DTSM-3                          | S1,S2              | flash and reset button                             | 450-2146-1-ND           | FSM2JMTR             |
 | 1   | 3.3V  | REG1117    | SOT223                          | IC1                | 800mA and 1A Low Dropout (LDO) Positive Regulator  | AZ1117CH-3.3TRG1DICT-ND | 621-AZ1117CH-3.3TRG1 |
 | 2   |       | 4050B      | 16-SOIC                         | U$1, U$2           | 6ch Buffer                                         | MC14050BDR2GOSCT-ND     | 863-MC14050BDR2G     |
