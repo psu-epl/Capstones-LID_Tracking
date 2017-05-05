@@ -156,7 +156,7 @@ v1.1</text>
 <text x="73.152" y="71.628" size="1.27" layer="25">Blk</text>
 <text x="74.168" y="55.626" size="1.016" layer="25"> RFID 
 Header</text>
-<text x="25.908" y="51.562" size="1.016" layer="21">GND</text>
+<text x="27.178" y="51.562" size="1.016" layer="21">GND</text>
 <text x="20.32" y="56.134" size="1.016" layer="21" rot="R90">5V-5V</text>
 <text x="31.496" y="57.658" size="0.762" layer="25">GND</text>
 <text x="32.512" y="70.612" size="0.762" layer="25">SCK</text>
