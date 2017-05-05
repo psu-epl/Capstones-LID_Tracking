@@ -69,9 +69,9 @@ The ESP-12E does not support USB natively, but a USB-to-SPI Protocol Converter m
 | 1   | 3.3V  | D1      | SOT23                          | D1                 | TVS Diode            | MMBZ5V6ALT1GOSCT-ND      | 863-MMBZ5V6ALT1G      |
 | 2   |       | DTSM-3     | DTSM-3                          | S1,S2              | flash and reset button                             | 450-2146-1-ND           | FSM2JMTR             |
 | 1   | 3.3V  | REG1117    | SOT223                          | IC1                | 800mA and 1A Low Dropout (LDO) Positive Regulator  | AZ1117CH-3.3TRG1DICT-ND | 621-AZ1117CH-3.3TRG1 |
-| 2   |       | 4050B      | 16-SOIC                         | U$1, U$2           | 6ch Buffer                                         | MC14050BDR2GOSCT-ND     | 863-MC14050BDR2G     |
-| 2   | 1x5   |            | FEM 1x5POS .1"                  | SPI_Header         | SPI header breakout(optional)                      | S6103-ND                |                      |
-| 1   | 1x9   |            | Term block 9-pos .1" screw term | APD / RFID Header  | Screw Terminal for APD and RFID scanner (Optional) | 277-1280-ND             | 651-1725724          |
+| 2   |       | 4050B      | 16-SOIC                         | U1, U2           | 6ch Buffer                                         | MC14050BDR2GOSCT-ND     | 863-MC14050BDR2G     |
+| 2   | 1x7   |            | FEM 1x7POS .1"                  | SPI_Header         | SPI header breakout(optional)                      |                 |                      |
+| 1   | 1x6   |            | Term block 6-pos .1" screw term | APD / RFID Header  | Screw Terminal for RFID scanner | ED10565-ND             |           |
 | 1   | 1x4   |            | Term block 4-pos .1"            |                    | Screw terminal for Power (Optional)                | ED10563-ND              | 651-1725672          |
 | 1   | 1x2   |            | Term block 2-pos .1"            |                    | Screw terminal for stop button   (Optional)        | ED10561-ND              | 571-282834-2         |
 | 3   | 100n  | C0805K     | 0805                            | C1, C4, C5         | bypass cap                                         |                         |                      |
