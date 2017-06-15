@@ -38,8 +38,6 @@ int wiegand2RFID(){
 else;
 Serial.print("RFID read!: ");
 Serial.println(RFID);
-
-auth = postRFID(RFID);
-
-return auth;
+interruptCounter = 0;   //reset after read.
+return RFID;
 } 
