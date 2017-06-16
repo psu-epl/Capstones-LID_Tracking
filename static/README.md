@@ -1,7 +1,7 @@
 Awesome Usage Monitor Static Web Resources
 ------
 
-*. /admin/ - Static files used by Django during the render of any Django Admin website pages. 
+* ./admin/ - Static files used by Django during the render of any Django Admin website pages. 
 * ./aum/ - Static files used by Django during the render of any AUM Admin website pages.
 
 ---
