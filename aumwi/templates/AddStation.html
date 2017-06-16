@@ -1,0 +1,36 @@
+<!-- SOF ADDSTATION.HTML -->
+{% extends "site_template.html" %}
+
+
+<!-- Header: Title, CSS, and font control -->
+{% block title %}<title>Add Station Module | AUM site admin</title>{% endblock %}
+
+
+<!-- Left Column: Site Logo and Main Navigation -->
+{% block ASBtn%}<a href="{% url 'addstation' %}"><div class="act-on">Add Station</div></a>{% endblock %}
+
+
+<!-- Center Column: Main page content and navigation -->
+{% block ccol %}
+  <div id="bordered_550px">
+    <form action="" method="post">
+      {% csrf_token %}
+      <table width="100%" border="0" padding="0">
+        {{ form }}
+      </table>
+      <input type="submit" class="btn-submit" value="Submit" />
+    </form>
+  </div>
+{% endblock %}
+
+
+<!-- Right Column: Page specific additional renders -->
+<!-- Using site_template.html defaults -->
+
+
+<!-- Footer: Copyright and Contact information -->
+<!-- Using site_template.html defaults -->
+
+
+<!-- EOF ADDSTATION.HTML -->
+
