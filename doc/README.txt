@@ -1,3 +1,0 @@
-Purpose: Documentation
-
-Comments: None
