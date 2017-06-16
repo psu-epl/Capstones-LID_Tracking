@@ -1,0 +1,55 @@
+<!-- SOF SITETEMPLATE.HTML -->
+
+{% load static %}
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  {% block title %}<title>AUM site admin</title>{% endblock %}
+  {% block css %}<link rel="stylesheet" type="text/css" href="{% static '/aum/pages.css' %}" />{% endblock %}
+  {% block font %}<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />{% endblock %}
+</head>
+
+<body>
+  <!-- Left Column: Site Logo and Main Navigation -->
+  <div id="lcol">
+  {% block lcol %}
+    {% block logo %}<div class="logo"></div>{% endblock %}
+    {% if user.is_authenticated %}
+      {% if perms.aumwi.is_manager %}
+        {% block AUBtn %}<a href="{% url 'adduser' %}"><div class="act">Add User</div></a>{% endblock %}
+        {% block FUBtn %}<a href="{% url 'finduser' %}"><div class="act">Find User</div></a>{% endblock %}
+        {% block ASBtn %}<a href="{% url 'addstation' %}"><div class="act">Add Station</div></a>{% endblock %}
+        {% block FSBtn %}<a href="{% url 'findstation' %}"><div class="act">Find Station</div></a>{% endblock %}
+        {% block AABtn %}<a href="{% url 'addauthuser' %}"><div class="act">Add Authorized User</div></a>{% endblock %}
+        {% block RBtn  %}<a href="{% url 'rpt_base' %}"><div class="act">Reports</div></a>{% endblock %}
+      {% endif %} <!-- is_manager -->
+      {% if perms.aumwi.is_owner %}
+        {% block DABtn %}<a href="{ url 'databaseadmin' %}"><div class="act">Database Admin</div></a>{% endblock %}
+      {% endif %} <!-- is_owner -->
+      <a href="{% url 'logout' %}"><div class="act">Logout</div></a>
+    {% else %}
+      <a href="{% url 'login' %}"><div class="act">Login</div></a>
+    {% endif %}
+  {% endblock %}
+  </div>
+
+  <!-- Center Column: Main page content and navigation -->
+  <div id="ccol">
+  {% block ccol %}{% endblock %}
+  </div>
+
+  <!-- Right Column: Page specific additional renders -->
+  <div id="rcol">
+    {% if user.is_authenticated %}
+      {%  block rcol %}{%  endblock %}
+    {% endif %}
+  </div>
+</body>
+<!--  <footer> -->
+    <!--{% block footer %}<p>© Copyright 2017 Laboratory for Interconnected Devices. All right reserved.</p>{% endblock %}-->
+<!--  </footer> -->
+</html>
+
+<!-- EOF SITE TEMPLATE -->
