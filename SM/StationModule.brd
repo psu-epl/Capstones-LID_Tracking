@@ -177,6 +177,17 @@ Header</text>
 <text x="23.876" y="68.072" size="0.762" layer="25">MOSI</text>
 <text x="23.876" y="70.612" size="0.762" layer="25">SCK</text>
 <text x="25.908" y="73.66" size="0.762" layer="25" rot="R180">+3V3</text>
+<text x="19.558" y="56.388" size="1.016" layer="22" rot="MR90">5V-5V</text>
+<text x="19.558" y="60.452" size="1.016" layer="22" rot="MR90">GND-GND</text>
+<text x="19.812" y="69.088" size="1.016" layer="22" rot="MR90">STOP</text>
+<text x="75.184" y="61.468" size="1.27" layer="26" rot="MR0">Yel</text>
+<text x="74.93" y="58.928" size="1.27" layer="26" rot="MR0">Red</text>
+<text x="75.438" y="64.262" size="1.27" layer="26" rot="MR0">Org</text>
+<text x="75.438" y="66.802" size="1.27" layer="26" rot="MR0">Wht</text>
+<text x="75.438" y="69.342" size="1.27" layer="26" rot="MR0">Grn</text>
+<text x="75.692" y="71.12" size="1.27" layer="26" rot="MR0">Blk</text>
+<text x="35.306" y="53.086" size="1.016" layer="22" rot="MR0">APD+</text>
+<text x="29.718" y="52.832" size="1.016" layer="22" rot="MR0">GND</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2221,6 +2232,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="32.004" y="57.912" extent="1-16" drill="0.6"/>
 <via x="19.812" y="67.818" extent="1-16" drill="0.6"/>
 <via x="23.876" y="51.054" extent="1-16" drill="0.6"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="30.48" y1="50.292" x2="27.94" y2="50.292" width="0.4064" layer="16"/>
 </signal>
 <signal name="GPIO1">
 <contactref element="U1" pad="TXD0"/>

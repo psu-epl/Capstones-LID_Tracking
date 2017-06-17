@@ -8774,6 +8774,9 @@ for controlling power to 120vac appliances.
 <wire x1="48.26" y1="149.86" x2="33.02" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="149.86" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
+<pinref part="JP3" gate="A" pin="2"/>
+<wire x1="48.26" y1="152.4" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
+<junction x="48.26" y="149.86"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$7" pin="GND"/>
