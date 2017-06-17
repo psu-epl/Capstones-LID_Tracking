@@ -1,4 +1,3 @@
-### Hardware:
 #### ESP8266 - 12E 
 <a href="https://espressif.com/en/products/hardware/esp8266ex/overview">EXPRESSIF</a>
 
