@@ -1,5 +1,26 @@
 ## Station Module
 
+How to set up the module (connect to the Wifi, set parameters, etc)
+
+Using the Module
+
+Brief description of Hardware and pin assignments
+
+Bill of Materials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Hardware:
 #### ESP8266 - 12E 
 <a href="https://espressif.com/en/products/hardware/esp8266ex/overview">EXPRESSIF</a>
