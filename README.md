@@ -15,7 +15,7 @@ Capstones-LID_Tracking
 
 ---
 
-The development environment for the Awesome Usage Monitor used an Ubuntu 16.04 server instance with python3.0 installed and running as a virtual environment.  The server was configured with SMTP, a postgreSQL database, Gunicorn application server, and Nginx setup as the webserver and the reverse proxy to Gunicorn.  Django 1.11 was used to develope the project.
+The development environment for the Awesome Usage Monitor used an Ubuntu 16.04 server instance with python3.0 installed and running as a virtual environment.  The server was configured with SMTP, a postgreSQL database, Gunicorn application server, and Nginx setup as the webserver and the reverse proxy to Gunicorn.  Django 1.11 was used to develop the project.
 
 ---
 
