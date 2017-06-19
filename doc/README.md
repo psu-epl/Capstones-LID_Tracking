@@ -8,4 +8,4 @@ Awesome Usage Monitor Development Documentation
 * ./station_module/ - Associated documentation for the design and implementation the project station module.
 * ./Capstone_Schedule_V2.pod - Project development schedule
 * ./Project_Design_Specification.pdf - Project Specifications provided by Sponsor
-* ./AUMUserManual.* - User manaul associated with the project.
+* ./AUMUserManual.(rtf|pdf) - User manual associated with the project.
