@@ -8,6 +8,7 @@ Capstones-LID_Tracking
 * ./sm/ - Files associated with the Station Module. Not used by Django.
 * ./aum/ - Django associated python files for the aum project and used by all applications.
 * ./aumwi/ - Django associated python files for the web interface application.
+* ./doc/ - Project Documentation, including User Manuals.
 * ./static/ - css, js, img, and font files used by Django to render webpages, organized by project
 * ./templates/registration/ - Django authentication and password management html files
 * ./testing/ - Testing software and associated coverage results zip
